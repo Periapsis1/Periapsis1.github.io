@@ -1,13 +1,118 @@
 ---
 ---
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Projects</h1>
-        <a href="./osu_projects/">OSU Projects</a>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peri’s homepage</title>
+    <meta
+      name="description"
+      content="Peri’s personal site — projects, demos, and links."
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <div class="brand-title">Peri’s homepage</div>
+            <div class="brand-subtitle">Projects, demos, and experiments</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="./osu_projects/">OSU projects</a>
+          <a class="nav-link" href="https://github.com/Periapsis1" rel="me"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <h1 class="hero-title">Hi, I’m Peri.</h1>
+          <p class="hero-lede">
+            Welcome to my little corner of the internet. Here are a few things
+            I’ve been building.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="./osu_projects/"
+              >Browse OSU projects</a
+            >
+            <a
+              class="button"
+              href="https://github.com/Periapsis1/Periapsis1.github.io"
+              >View this site’s repo</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid">
+            <article class="card">
+              <div class="card-top">
+                <h2 class="card-title">OSU Projects</h2>
+                <p class="card-text">
+                  A collection of projects from my time at OSU, including static
+                  demos you can click through.
+                </p>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="./osu_projects/">Open OSU projects →</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h2 class="card-title">Ace (demo)</h2>
+                <p class="card-text">
+                  Flashcards + mini-games. Converted to static pages so it works
+                  great on GitHub Pages.
+                </p>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="./osu_projects/ace/">Open Ace demo →</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <h2 class="card-title">Elsewhere</h2>
+                <p class="card-text">
+                  Links to my profile and source code for this website.
+                </p>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/Periapsis1"
+                  >GitHub profile →</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="muted">© <span id="year"></span> Peri</span>
+        <span class="muted">Built with Jekyll + GitHub Pages</span>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
