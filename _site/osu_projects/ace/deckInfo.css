@@ -1,0 +1,22 @@
+.title {
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+.games-list {
+    background-color:white;
+    width: 20%;
+    min-width: 150px;
+    height: 100%;
+    border-right:3px solid white;
+    border-left:3px solid white;
+    border-color:black;
+    float: left;
+}
+
+.game {
+    box-sizing: content-box;
+    margin-top: 10px;
+    padding: 6px;
+    color: black;
+}

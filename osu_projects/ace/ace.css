@@ -1,0 +1,275 @@
+.site-body{
+  font-family:'Roboto';
+  background-color: #EEEEEE;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  overflow: scroll;
+}
+
+Header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.site-title {
+  Color: white;
+  background-color: #8AE3A8;
+  font-weight: bold;
+  margin: 0px;
+  padding: 5px;
+  border: 3px solid #8AE3A8;
+  border-color: black;
+  cursor: pointer;
+  
+}
+.site-background {
+  position: absolute;
+  top: 60px;
+  right: 250px;
+  left: 250px;
+  bottom: 0px;
+  margin: 0px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-rows: min-content 215px 225px auto;
+  row-gap: 20px;
+  grid-auto-flow: column dense;
+  justify-content: center;
+}
+
+.side-bar{
+  background-color:white;
+  margin-top: 54px;
+  width: 20%;
+  min-width: 150px;
+  height: 100%;
+  border-right:3px solid white;
+  border-left:3px solid white;
+  border-color:black;
+  float: left;
+}
+
+select#sort-by {
+  width: 100%;
+}
+
+h2{
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.topic-box{
+  text-align:center;
+  height: 30px;
+  font-size:large;
+  margin: 10px;
+  border:3px solid white;
+  border-color:black;
+  padding-top:5px;
+}
+
+.deck-container {
+  margin: 54px 0px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 5%;
+}
+
+.deck-view {
+  display: flex;
+  flex: 0 1 30%;
+  min-width: 250px;
+  padding: 10px;
+  margin: 2px;
+  background-color: #ffffff;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.deck-view:hover {
+  cursor: pointer;
+}
+
+.error-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.error-container h2 {
+  margin: 10px 0;
+  font-size: 96px;
+  font-weight: 100;
+}
+
+.error-container h3 {
+  margin: 10px 0;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#create-deck-button {
+  position: absolute;
+  left: 70%;
+  right: 15px;
+  top: 9%;
+  bottom: 87%;
+  background-color: #8AE3A8;
+  color: white;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+#create-deck-modal-backdrop {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+#create-deck-modal {
+  z-index: 1010;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#create-deck-modal-prompts {
+  margin: 38px auto;
+  min-height: 400px;
+  width: auto;
+  max-width: 800px;
+  min-width: 400px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.deck-input-element {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.deck-input-element label {
+  flex: 1 75px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.deck-input-element input,
+.deck-input-element textarea {
+  flex: 6 200px;
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #aaa;
+}
+
+.deck-input-element textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 20px;
+}
+
+#deck-topic-input,
+#deck-name-input {
+  max-height: 20px;
+}
+
+#deck-desc-input {
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.lower-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#cancel-button,
+#add-flashcard-button,
+#save-deck-button {
+  background-color: #8AE3A8;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.card-input-element label {
+  font-weight: 600;
+  flex: 1 75px;
+  margin-right: 10px;
+}
+
+.card-input-prompts {
+  overflow: scroll;
+  border: 3px solid gray;
+  width: auto;
+  max-width: 800px;
+  min-width: 400px;
+  min-height: 100px;
+  max-height: 200px;
+  margin: 40px auto;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.card-input-element {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.card-input-element label {
+  font-weight: 600;
+  flex: 1 75px;
+  margin-right: 10px;
+}
+
+.card-input-element input,
+.card-input-element textarea {
+  flex: 6 200px;
+  padding: 8px;
+  font-size: 18px;
+  border: 1px solid #aaa;
+}
+
+.card-input-element textarea {
+  resize: none;
+  overflow: hidden;
+  min-height: 20px;
+}
+
+#card-topic-input,
+#card-name-input {
+  max-height: 20px;
+}
+
+#card-desc-input {
+  min-height: 100px;
+  max-height: 100px;
+}
+
+a.no-underline-link {
+  text-decoration: inherit;
+}
