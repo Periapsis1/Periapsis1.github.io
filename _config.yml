@@ -1,7 +1,10 @@
-theme: jekyll-theme-minimal
 title: Peri's homepage
 description: My website where I will showcase some of my projects
 
-domain: Periapsis1.github.io
-url: https://Periapsis1.github.io
-baseurl: /Periapsis.github.io
+# Build the site from /public so `public/index.html` is the homepage.
+source: public
+destination: _site
+
+# User site (https://<user>.github.io) should have an empty baseurl.
+url: https://periapsis1.github.io
+baseurl: ""

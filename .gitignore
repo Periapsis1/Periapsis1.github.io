@@ -1,2 +1,7 @@
 Gemfile.lock
 .vscode
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
