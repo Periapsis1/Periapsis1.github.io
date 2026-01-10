@@ -4,6 +4,10 @@
     <p class="card-text">{{ include.text }}</p>
   </div>
   <div class="card-actions">
-    <a class="link" href="{{ include.href }}">{{ include.link_label }} →</a>
+    {% if include.href and include.href != "" %}
+      <a class="link" href="{{ include.href }}">{{ include.link_label }} →</a>
+    {% else %}
+      <span class="muted">{{ include.link_label | default: "Coming soon" }}</span>
+    {% endif %}
   </div>
 </article>
