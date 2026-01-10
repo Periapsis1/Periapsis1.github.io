@@ -272,7 +272,6 @@ prevWordButton.addEventListener("click", function() {
 })
 
 async function main() {
-    deck = this.deck;
     createBoard();
 }
 
