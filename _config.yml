@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: Peri's homepage
 description: My website where I will showcase some of my projects
+
+domain: Periapsis1.github.io
+url: https://Periapsis1.github.io
+baseurl: /perixyz/
