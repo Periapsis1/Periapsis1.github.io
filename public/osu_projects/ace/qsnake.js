@@ -426,7 +426,7 @@ function game_loop (game, ctx) {
         document.addEventListener('keypress', start_game_on_enter);
         return;
     }
-    setTimeout(() => game_loop(game, ctx), 300);
+    setTimeout(() => game_loop(game, ctx), 150);
 }
 
 function draw_canvas_bg(ctx, bg_color, border_color) {
