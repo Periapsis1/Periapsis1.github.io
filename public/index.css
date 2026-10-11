@@ -1,21 +1,21 @@
-/* Clean light-blue theme */
+/* Dark theme (default) — flatter surfaces, minimal gradients */
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 
-  --bg: #f6fbff;
-  --surface: #ffffff;
-  --surface-2: rgba(255, 255, 255, 0.72);
-  --text: #0b1b2b;
-  --muted: rgba(11, 27, 43, 0.7);
+  --bg: #0b1220;
+  --surface: #0f1a2b;
+  --surface-2: rgba(15, 26, 43, 0.72);
+  --text: #eaf1ff;
+  --muted: rgba(234, 241, 255, 0.72);
 
   --blue-900: #0a2e6d;
-  --blue-700: #1b5fd6;
-  --blue-600: #2c7cff;
-  --blue-300: #a9d4ff;
-  --ring: rgba(44, 124, 255, 0.35);
+  --blue-700: #3b82f6;
+  --blue-600: #60a5fa;
+  --blue-300: #93c5fd;
+  --ring: rgba(96, 165, 250, 0.45);
 
-  --border: rgba(10, 46, 109, 0.14);
-  --shadow: 0 12px 30px rgba(10, 46, 109, 0.12);
+  --border: rgba(234, 241, 255, 0.12);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 
   --radius: 16px;
   --radius-sm: 12px;
@@ -39,17 +39,7 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(
-      1200px 600px at 20% 0%,
-      rgba(44, 124, 255, 0.16),
-      transparent 60%
-    ),
-    radial-gradient(
-      900px 500px at 85% 10%,
-      rgba(169, 212, 255, 0.55),
-      transparent 55%
-    ),
-    linear-gradient(180deg, var(--bg), #ffffff 65%);
+  background: var(--bg);
   line-height: 1.5;
 }
 
@@ -94,7 +84,7 @@ button:focus-visible {
   top: 0;
   z-index: 5;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--surface-2), rgba(255, 255, 255, 0));
+  background: var(--surface-2);
   backdrop-filter: blur(10px);
 }
 
@@ -117,9 +107,9 @@ button:focus-visible {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--blue-600), var(--blue-300));
-  box-shadow: 0 10px 22px rgba(44, 124, 255, 0.22);
-  border: 1px solid rgba(44, 124, 255, 0.25);
+  background: rgba(96, 165, 250, 0.9);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(96, 165, 250, 0.25);
 }
 
 .brand-title {
@@ -149,12 +139,12 @@ button:focus-visible {
   padding: 0.55rem 0.8rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  color: rgba(11, 27, 43, 0.85);
+  color: rgba(234, 241, 255, 0.88);
 }
 
 .nav-link:hover {
   border-color: var(--border);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 /* Hero */
@@ -163,11 +153,7 @@ button:focus-visible {
 }
 
 .hero-inner {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.78),
-    rgba(255, 255, 255, 0.58)
-  );
+  background: rgba(15, 26, 43, 0.78);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 4px);
   padding: clamp(1.4rem, 4vw, 2.25rem);
@@ -202,27 +188,27 @@ button:focus-visible {
   padding: 0.75rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.8);
-  color: rgba(11, 27, 43, 0.9);
+  background: rgba(15, 26, 43, 0.85);
+  color: rgba(234, 241, 255, 0.92);
   transition: transform 120ms ease, background 120ms ease,
     border-color 120ms ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(44, 124, 255, 0.28);
+  background: rgba(15, 26, 43, 0.98);
+  border-color: rgba(96, 165, 250, 0.35);
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--blue-700), var(--blue-600));
-  border-color: rgba(44, 124, 255, 0.55);
+  background: rgba(59, 130, 246, 0.95);
+  border-color: rgba(96, 165, 250, 0.45);
   color: white;
-  box-shadow: 0 14px 26px rgba(44, 124, 255, 0.24);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.35);
 }
 
 .button.primary:hover {
-  border-color: rgba(44, 124, 255, 0.75);
+  border-color: rgba(147, 197, 253, 0.6);
 }
 
 /* Cards */
@@ -243,9 +229,9 @@ button:focus-visible {
   justify-content: space-between;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(15, 26, 43, 0.85);
   padding: 1.15rem 1.15rem 1rem;
-  box-shadow: 0 10px 22px rgba(10, 46, 109, 0.09);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
   min-height: 170px;
 }
 
@@ -270,20 +256,20 @@ button:focus-visible {
   align-items: center;
   gap: 0.35rem;
   font-weight: 650;
-  color: var(--blue-900);
+  color: var(--blue-300);
   padding: 0.35rem 0.55rem;
   margin: -0.35rem -0.55rem;
   border-radius: 999px;
 }
 
 .link:hover {
-  background: rgba(44, 124, 255, 0.12);
+  background: rgba(96, 165, 250, 0.14);
 }
 
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(15, 26, 43, 0.6);
 }
 
 .footer-inner {
