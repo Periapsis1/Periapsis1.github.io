@@ -33,7 +33,7 @@ const CARD_MIN_DIST_SIDES = 6;  // could be dependant on word length but that's 
 
 let canvas = document.getElementById('qsnake-canvas');
 
-let test_deck = {
+let old_test_deck = {
     topic: 'Japanese',
     name: 'hiragana-a',
     desc: 'Learn the \'a\' row of hiragana (vowels)',
@@ -57,6 +57,38 @@ let test_deck = {
         {
             word: 'お',
             def: 'o'
+        }
+    ]
+}
+
+let test_deck = {
+    topic: 'Computer Science',
+    name: 'Programming Languages',
+    desc: 'Match languages to their description',
+    cards: [
+        {
+            word: 'Python',
+            def: 'High level versatile language used for anything from Machine Learning to simple games. Widely taught as an introductory programming language. (1991)'
+        },
+        {
+            word: 'C',
+            def: 'General purpose, language that is widely used today in Operating Systems and embedded systems. (1972)'
+        },
+        {
+            word: 'Java',
+            def: 'General purpose, high level, object oriented programming language. Source code is compiled into bytecode and runs on any ___ virtual machine at runtime. (1995)'
+        },
+        {
+            word: 'JavaScript',
+            def: 'Simple, weakly typed language, widely used in web applications including front-end development and even back-end development. (1995)'
+        },
+        {
+            word: 'C#',
+            def: '.NET based language used for Microsoft applications and Unity game development. (2000)'
+        },
+        {
+            word: 'SQL',
+            def: 'Declarative language most widely used for communicating with databases, including creating, reading, updating, and deleting rows and columns of data. (1973)'
         }
     ]
 }
@@ -394,7 +426,7 @@ function game_loop (game, ctx) {
         document.addEventListener('keypress', start_game_on_enter);
         return;
     }
-    setTimeout(() => game_loop(game, ctx), 100);
+    setTimeout(() => game_loop(game, ctx), 300);
 }
 
 function draw_canvas_bg(ctx, bg_color, border_color) {
